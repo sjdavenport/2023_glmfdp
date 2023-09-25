@@ -12,8 +12,8 @@ This repository provides code to resproduce the experiments and real data analys
 
 ## Dependencies <a name="dependencies"></a>
 
-### pyrft <a name="rftbox"></a>
-In order to run some of this code you will need the pyrft python package.  This can be downloaded at: https://github.com/sjdavenport/pyrft. This package is used to bootstrap the data, perform FDP control and run simulations.
+### pyperm <a name="pyerm"></a>
+In order to run some of this code you will need the pyperm python package.  This can be downloaded at: https://github.com/sjdavenport/pyperm. This package is used to bootstrap the data, perform FDP control and run simulations.
 
 ### export_fig
 Figures were printed to pdfs using the export_fig matlab package. This can be 
