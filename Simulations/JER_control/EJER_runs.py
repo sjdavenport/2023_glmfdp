@@ -97,7 +97,7 @@ def run_nsubj_dim_mean(run, B=100, simtype=1, niters=5000):
 
 def run_nsubj_dim_update(run, B=100, simtype=1, niters=5000):
     # Set the location to save the results
-    saveloc = '/storage/store2/work/sdavenpo/drago/Results/FPR_results/EJER_nsubj_dim/'
+    saveloc = '~/2023_glmfdp/Simulations/Review_results/'
 
     # Set the fwhm
     # fwhm_vec = np.arange(0,9,4)
