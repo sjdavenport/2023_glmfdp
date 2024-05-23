@@ -167,7 +167,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     C = np.array([[1, -1, 0], [0, 1, -1]])
 
     # Set the number of subjects
-    nsubj = 100 + 10*(run % 5 + 1)
+    nsubj = 10*run
 
     pi0_vec = np.array((1, 0.9, 0.8, 0.5))
     pi0 = pi0_vec[run % 4]
