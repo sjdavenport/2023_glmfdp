@@ -156,7 +156,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     # run should be 1 to 60;
 
     # Set the location to save the results
-    saveloc = '~/2023_glmfdp/Simulations/Review_results/'
+    saveloc = '/home/mind/sdavenpo/2023_glmfdp/Simulations/Review_results/'
 
     # Set the fwhm
     fwhm_vec = np.arange(0, 9, 4)
@@ -178,7 +178,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     saveloc += 'nsubjdim2D_fwhm_' + \
         str(fwhm) + '_pi0_' + str(int(100*pi0)) + '_nsubj_' + str(nsubj)
     saveloc += '_B_' + str(B) + '_niters_' + \
-        str(niters) + '_simtype_' + str(simtype)
+        str(niters) + '_simtype_' + str(simtype) + '_df_' + str(df)
 
     # Initialize matrices to store the estimated FPRs
     store_JER = 0
