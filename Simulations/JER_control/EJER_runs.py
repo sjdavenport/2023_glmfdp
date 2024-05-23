@@ -157,7 +157,6 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
 
     # Set the location to save the results
     saveloc = '~/2023_glmfdp/Simulations/Review_results/'
-    saveloc = './'
 
     # Set the fwhm
     fwhm_vec = np.arange(0, 9, 4)
