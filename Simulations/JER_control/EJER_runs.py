@@ -97,6 +97,7 @@ def run_nsubj_dim_mean(run, B=100, simtype=1, niters=5000):
 
 def run_nsubj_dim_update(run, B=100, simtype=1, niters=5000):
     # Set the location to save the results
+    # saveloc = '~/2023_glmfdp/Simulations/Review_results/'
     saveloc = '~/2023_glmfdp/Simulations/Review_results/'
 
     # Set the fwhm
@@ -155,6 +156,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     # run should be 1 to 60;
 
     # Set the location to save the results
+    saveloc = '~/2023_glmfdp/Simulations/Review_results/'
     saveloc = './'
 
     # Set the fwhm
