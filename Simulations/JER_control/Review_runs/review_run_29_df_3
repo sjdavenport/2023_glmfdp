@@ -1,4 +1,0 @@
-import sys
-sys.path.insert(0, '/storage/store2/work/sdavenpo/drago/Results/FPR_results/EJER_nsubj_dim')
-from EJER_nsubj_dim import run_nsubj_dim_mean
-run_nsubj_dim_review(29, 100, 1000, df=3)
