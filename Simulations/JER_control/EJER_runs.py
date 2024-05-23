@@ -151,11 +151,11 @@ def run_nsubj_dim_update(run, B=100, simtype=1, niters=5000):
                  JER_FPR_SD=store_JER_SD, FWER_FPR_SD=store_FWER_SD)
 
 
-def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000):
+def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     # run should be 1 to 60;
 
     # Set the location to save the results
-    saveloc = 'C:\\Users\\12SDa\\davenpor\\davenpor\\Toolboxes\\Papers\\lmfdp\\Simulations\\JER_control\\EJER_runs_data\\Bootstrap\\'
+    saveloc = './'
 
     # Set the fwhm
     fwhm_vec = np.arange(0, 9, 4)
@@ -193,7 +193,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000):
         Dim = 1
 
     FWER_FPR, JER_FPR, FWER_FPR_SD, JER_FPR_SD = pr.bootfpr(
-        Dim, nsubj, C, fwhm, 0, B, niters, pi0, simtype, do_sd=1)
+        Dim, nsubj, C, fwhm, 0, B, niters, pi0, simtype, do_sd=1, rf='T', df=df)
     store_JER = JER_FPR
     store_FWER = FWER_FPR
     store_JER_SD = JER_FPR_SD
