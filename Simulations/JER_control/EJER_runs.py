@@ -167,13 +167,13 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     C = np.array([[1, -1, 0], [0, 1, -1]])
 
     # Set the number of subjects
-    nsubj = 10*run
+    nsubj = 20*((run % 5) + 1)
 
     pi0_vec = np.array((1, 0.9, 0.8, 0.5))
     pi0 = pi0_vec[run % 4]
 
     # dim_sides = np.array((25, 50, 100))
-    dim_sides = np.array((50))
+    dim_sides = np.array((25))
 
     saveloc += 'nsubjdim2D_fwhm_' + \
         str(fwhm) + '_pi0_' + str(int(100*pi0)) + '_nsubj_' + str(nsubj)
@@ -187,7 +187,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     store_FWER_SD = 0
 
     # Save the coverage
-    Dim = (50, 50)
+    Dim = (25, 25)
 
     # In the single voxel case use this dimension
     if Dim == (1, 1):
