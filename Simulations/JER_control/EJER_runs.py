@@ -167,27 +167,26 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
     C = np.array([[1, -1, 0], [0, 1, -1]])
 
     # Set the number of subjects
-    nsubj = 20*((run % 5) + 1)
+    nsubj = 20*((run % 5) + 1) - 10
 
     pi0_vec = np.array((1, 0.9, 0.8, 0.5))
     pi0 = pi0_vec[run % 4]
 
     # dim_sides = np.array((25, 50, 100))
-    dim_sides = np.array((25))
+    # Save the coverage
+    Dim = (25, 25)
 
     saveloc += 'nsubjdim2D_fwhm_' + \
         str(fwhm) + '_pi0_' + str(int(100*pi0)) + '_nsubj_' + str(nsubj)
     saveloc += '_B_' + str(B) + '_niters_' + \
-        str(niters) + '_simtype_' + str(simtype) + '_df_' + str(df)
+        str(niters) + '_simtype_' + str(simtype) + \
+        '_df_' + str(df) + '_dim_' + str(Dim[0])
 
     # Initialize matrices to store the estimated FPRs
     store_JER = 0
     store_FWER = 0
     store_JER_SD = 0
     store_FWER_SD = 0
-
-    # Save the coverage
-    Dim = (25, 25)
 
     # In the single voxel case use this dimension
     if Dim == (1, 1):
