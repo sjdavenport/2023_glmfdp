@@ -168,6 +168,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
 
     # Set the number of subjects
     nsubj = 10*((run % 11) + 1)
+    # nsubj = 20*(run % 5 + 1)
     if nsubj == 110:
         return
 
@@ -176,7 +177,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
 
     # dim_sides = np.array((25, 50, 100))
     # Save the coverage
-    Dim = (25, 25)
+    Dim = (50, 50)
 
     saveloc += 'nsubjdim2D_fwhm_' + \
         str(fwhm) + '_pi0_' + str(int(100*pi0)) + '_nsubj_' + str(nsubj)
