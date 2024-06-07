@@ -177,7 +177,7 @@ def run_nsubj_dim_review(run, B=100, simtype=1, niters=5000, df=5):
 
     # dim_sides = np.array((25, 50, 100))
     # Save the coverage
-    Dim = (50, 50)
+    Dim = (25, 25)
 
     saveloc += 'nsubjdim2D_fwhm_' + \
         str(fwhm) + '_pi0_' + str(int(100*pi0)) + '_nsubj_' + str(nsubj)
